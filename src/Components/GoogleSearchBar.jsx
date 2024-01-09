@@ -1,10 +1,15 @@
 // window.open(`http://www.google.com/search?q=${search}`, '_blank')
 
-import React from 'react'
+import {useRef} from 'react'
 
 const GoogleSearchBar = () => {
+    function search(){
+
+    }
     return (
-        <div>GoogleSearchBar</div>
+        <div>
+            <form action={search}></form>
+        </div>
     )
 }
 

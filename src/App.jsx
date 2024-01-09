@@ -1,9 +1,10 @@
 import './App.css';
+import Search from './Components/GoogleSearchBar'
 
 function App() {
   return (
     <div className="App">
-      
+      <Search></Search>
     </div>
   );
 }
