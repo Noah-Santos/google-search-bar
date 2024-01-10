@@ -13,13 +13,13 @@ const GoogleSearchBar = () => {
         window.open(`http://www.google.com/search?q=${input.current.value}`, '_blank')
     }
     return (
-        <div>
-            <form onSubmit={search}>
+        <>
+            <form onSubmit={search} className='searchForm'>
                 {/* ties the input tag to the useRef variable */}
-                <input type="text" ref={input} placeholder='Search Google'/>
-                <button type='submit'><IoMdSearch /></button>
+                <input type="text" ref={input} placeholder='Search Google' className='search'/>
+                {/* <button type='submit'><IoMdSearch /></button> */}
             </form>
-        </div>
+        </>
     )
 }
 
