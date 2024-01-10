@@ -7,13 +7,15 @@ const GoogleSearchBar = () => {
     let input = useRef('');
     
     const search = (e)=>{
+        // prevents the page from reloading when the form is submitted
         e.preventDefault();
-        console.log(input.current.value)
+        // opens the search request in a new google tab
         window.open(`http://www.google.com/search?q=${input.current.value}`, '_blank')
     }
     return (
         <div>
             <form onSubmit={search}>
+                {/* ties the input tag to the useRef variable */}
                 <input type="text" ref={input} placeholder='Search Google'/>
                 <button type='submit'><IoMdSearch /></button>
             </form>
