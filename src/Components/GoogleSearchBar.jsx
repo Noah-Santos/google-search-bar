@@ -16,7 +16,7 @@ const GoogleSearchBar = () => {
         <>
             <form onSubmit={search} className='searchForm'>
                 {/* ties the input tag to the useRef variable */}
-                <input type="text" ref={input} placeholder='Search Google' className='search'/>
+                <input type="text" ref={input} placeholder='Search Google Minus' className='search'/>
                 {/* <button type='submit'><IoMdSearch /></button> */}
             </form>
         </>
